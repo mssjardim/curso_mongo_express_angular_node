@@ -1,0 +1,3 @@
+mkdir express && cd express
+npm init
+npm i --save express
