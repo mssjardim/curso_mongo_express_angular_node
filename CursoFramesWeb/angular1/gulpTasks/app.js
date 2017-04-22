@@ -14,14 +14,14 @@ gulp.task('app.html', function() {
 })
 
 gulp.task('app.css', function() {
-  gulp.src('app/**.*.css')
+  gulp.src('app/**/*.css')
   .pipe(uglifycss({ "uglyComments": true }))
   .pipe(concat('app.min.css'))
   .pipe(gulp.dest('public/assets/css'))
 })
 
 gulp.task('app.js', function() {
-  gulp.src('app/**.*.js')
+  gulp.src('app/**/*.js')
   .pipe(babel({ presets: ['es2015'] }))
   .pipe(uglify())
   .pipe(concat('app.min.js'))

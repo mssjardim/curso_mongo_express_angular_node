@@ -3,3 +3,10 @@ npm install express body-parser mongoose node-restful mongoose-paginate lodash e
 npm install nodemon --save-dev
 
 npm run dev
+npm run production
+
+pm2.keymetrics.io
+npm install pm2 -g
+pm2 status backend
+pm2 delete backend
+pm2 monit
