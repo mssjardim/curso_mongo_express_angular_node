@@ -7,7 +7,7 @@
         url: "/dashboard",
         templateUrl: "dashboard/dashboard.html"
       }).state('billingCycle', {
-        url: "/billingCycle",
+        url: "/billingCycles?page",
         templateUrl: "billingCycle/tabs.html"
       })
 
